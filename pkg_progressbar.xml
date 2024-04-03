@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="package" version="4.0" method="upgrade">
+ <identifier>pkg:progressbar</identifier>
+ <name>progressbar Package</name>
+ <author>KWProductions Co.</author>
+ <creationDate>March 15 2024</creationDate>
+ <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+ <packagename>progressbar</packagename>
+ <version>1.0.0</version>
+ <url>https://www.extensions.kwproductions121.ir</url>
+ <packager>Kian William Nowrouzian</packager>
+ <packagerurl>https://www.extensions.kwproductions121.ir</packagerurl>
+ <description><![CDATA[ These plugins in the package are developed by <a href="https://kwproductions121.ir">KWProductions Co.</a> In case of any problem contact us: webarchitect@kwproductions121.ir <br />. ]]></description>
+ <update>http://www.extensions.kwproductions121.ir</update>
+ <scriptfile>script.php</scriptfile>
+ <files>
+   <file type="plugin" client="site" group="content" >progressbar.zip</file>
+   <file type="plugin" client="site" group="system" >approximateloadtime.zip</file>     
+</files>
+<updateservers>
+		<server type="collection" name="pkg_progressbar"><![CDATA[https://www.extensions.kwproductions121.ir/myextensions.xml]]></server>
+</updateservers>
+ </extension>

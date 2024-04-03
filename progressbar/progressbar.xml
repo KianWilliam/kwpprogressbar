@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="content" method="upgrade">
+	<name>Content - progressbar</name>
+	<author>KWProductions Co.</author>
+	<creationDate>Jan 2023</creationDate>
+	<copyright>(C) 2022 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>webarchitect@kwproductions121.ir</authorEmail>
+	<authorUrl>kwproductions121.ir</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[This pluging loads a progress bar of your taste on web pages of your selection!<a href='extensions.kwproductions121.ir'>KWProductions Co.</a>]]></description>
+	
+	<files>
+		<filename plugin="progressbar">progressbar.php</filename>
+		<filename>index.html</filename>	
+        <folder>assets</folder>		
+	</files>
+	<config>
+	
+		<fields name="params" addfieldpath="plugins/content/progressbar/assets">
+			<fieldset name="basic">
+			<field 
+				name="loadbartype" 
+				type="radio"
+				label="Loadbar Type:"
+				description="PLG_PROGRESSBAR_LOAD_BAR_DESC"
+				default="0"
+				>
+			    <option value="0">No Preloader</option>
+				<option value="1">Circle</option>
+					<option value="2">Bubble Loop</option>
+					<option value="3">Wave Two Wrap</option>
+					<option value="4">Audio Wave</option>
+					<option value="5">Circle Two</option>
+					<option value="6">Clock</option>
+				
+			</field>
+			<field 
+				name="excluded" 
+				type="ptextarea"
+				label="Pages to be excluded:(Works ONLY with SEO rewriting url set to yes in global configuration,pay attention to the sample!)"
+				description="PLG_PROGRESSBAR_EXCLUDED_DESC"
+				id="pt"
+				/>
+				<field 
+				name="mainpage" 
+				type="text"
+				label="Input the site route if you do not want the main page shows loadbar:"
+				description="PLG_PROGRESSBAR_ROUTE_DESC"
+				hint="example.com"
+				/>
+			</fieldset>
+		</fields>
+	
+	</config>
+	
+
+	
+</extension>
