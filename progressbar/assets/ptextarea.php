@@ -2,7 +2,10 @@
 
 defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\Form\FormField;
+use Joomla\CMS\HTML\HTMLHelper; 
 
+
+HTMLHelper::_('jquery.framework');
 //JHtml::_('behavior.formvalidator');
 //class JFormFieldMtextarea extends JFormField{
 class JFormFieldPtextarea extends FormField{
@@ -36,10 +39,13 @@ class JFormFieldPtextarea extends FormField{
 <script type="text/javascript">
 jQuery(document).ready(function(){
 document.formvalidator.setHandler('uri', function(value){
+	
 		
 		regex=/^(\|?([a-zA-Z0-9\?\/\.\-\=&_:\s])+\|?)+$/;
 	return regex.test(value);
 
 	
 })
+});
 </script>
+
